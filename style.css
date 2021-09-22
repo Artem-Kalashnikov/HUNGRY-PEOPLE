@@ -42,31 +42,61 @@
     color: #E8C300;
 }
 .info{
-    margin-top: 225px;
+    padding-top: 100px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     color: #fff;
 }
 .timetable{
-    height: 60px;
-    text-align: center;
-    width: 700px;
+    height: 700px;
+    width: 60px;
+    display: flex;
     font-weight: bold;
     font-size: 12px;
+    align-items: center;
+    justify-content: space-around;
     line-height: 12px;
+    
+}
+.timetable-text{
+    position: absolute;
     transform: rotate(-90deg);
-    color: #fff;
 }
 .name{
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
     max-width: 1180px;
 }
 .name-h1{
-font-size: 96px;
-line-height: 0px;
-display: flex;
-align-items: center;
-text-align: center;
-text-transform: uppercase;
+    font-size: 96px;
+    color: white;
+    text-transform: uppercase;
+}
+.border{
+    width: 60px;
+    height: 5px;
+    background: #E8C300;
+    border-radius: 50px;
+    
+}
+.social{
+    display: flex;
+    flex-direction: column;
+}
+.button{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.btn{
+    width: 200px;
+    height: 60px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    text-align: center;
+    font-size: 12px;
+    
 }
