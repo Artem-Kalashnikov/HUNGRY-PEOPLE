@@ -6,6 +6,7 @@
     background: url(./Header.png) no-repeat;
     background-size: cover;
     width: 100%;
+    max-height: 800px;
 }
 .container{
     max-width: 1280px;
@@ -42,14 +43,13 @@
     color: #E8C300;
 }
 .info{
-    padding-top: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: #fff;
 }
 .timetable{
-    height: 700px;
+    height: 550px;
     width: 60px;
     display: flex;
     font-weight: bold;
@@ -76,6 +76,8 @@
     text-transform: uppercase;
 }
 .border{
+    margin-top: 25px;
+    margin-bottom: 50px;
     width: 60px;
     height: 5px;
     background: #E8C300;
@@ -110,4 +112,48 @@
 .btn:hover{
     background-color: #E8C300;
     border: 2px solid transparent;
+    cursor: pointer;
+}
+.down{
+    width: 60px;
+    height: 60px;
+    background-image: url(./down-btn.png);
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+}
+.about__content{
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.about__content--text{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading{
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-bottom: -20px;
+}
+.strong{
+    line-height: 28px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    max-width: 500px;
+}
+.usual{
+    line-height: 24px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 500px;   
 }
