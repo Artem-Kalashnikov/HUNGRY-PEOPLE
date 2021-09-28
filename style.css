@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('http://fonts.cdnfonts.com/css/banny');
+h1, h2{
+    font-family: 'Banny', sans-serif;
+}
 * {
+    font-family: 'Open Sans', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -20,6 +26,9 @@
 .left {
     display: flex;
     justify-content: start;
+}
+.center{
+    margin: 25px;
 }
 .right{
     display: flex;
@@ -311,6 +320,10 @@
     height: 60px;
     margin-bottom: 10px;
 }
+.textarea__width{
+    max-width: 1250px;
+}
+
 .textarea{
     width: 100%;
     background-color: #e5e5e5;
@@ -361,4 +374,14 @@ margin-right: 10px;
     height: 100px;
     background: rgba(0, 0, 0, 0.9);
     color:rgba(255, 255, 255, 0.5);
+}
+input, textarea{
+    padding: 15px;
+}
+/* адаптив*/
+
+@media (max-width:1000px) {
+
+
+    
 }
