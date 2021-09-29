@@ -331,6 +331,7 @@ h1, h2{
     background-color: #e5e5e5;
     border-radius: 5px;
     border: none;
+    min-height: 120px;
     max-height: 120px;
     transition: 0.3s;
     border: 1px solid #e5e5e5;
