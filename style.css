@@ -323,9 +323,6 @@ h1, h2{
     transition: 0.3s;
     margin-bottom: 10px;
 }
-.textarea__width{
-    max-width: 1250px;
-}
 
 .textarea{
     width: 100%;
