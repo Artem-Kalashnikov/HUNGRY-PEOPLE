@@ -20,7 +20,6 @@ h1, h2{
     margin: 0 auto;
 }
 .nav{
-    padding-top: 25px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start ;
@@ -34,16 +33,16 @@ h1, h2{
     justify-content: end;
 }
 .header-items {
-    max-width: 131px;
-    max-height: 100px;
-    width: 100%;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 133px;
+    height: 100px;
     color: #fff;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 12px;
     line-height: 18px;
     text-transform: uppercase;
-    margin: 25px 25px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -57,7 +56,7 @@ h1, h2{
     color: #fff;
 }
 .timetable{
-    height: 550px;
+    height: 500px;
     width: 60px;
     display: flex;
     font-weight: bold;
@@ -99,8 +98,11 @@ h1, h2{
     height: 220px;
     justify-content: space-between;
 }
+.pointer{
+    cursor: pointer;
+}
 .button{
-    padding-top: 30px;
+    padding-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -108,7 +110,7 @@ h1, h2{
 
 }
 .btn{
-    margin-top: 30px;
+    margin-top: 10px;
     width: 200px;
     border: 1px solid #fff;
     background-color: transparent;
@@ -130,10 +132,12 @@ h1, h2{
     height: 60px;
     background-image: url(./down-btn.png);
     cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 50px;
+    padding: 60px 0;
+    margin: 39px auto;
     background-repeat: no-repeat;
+}
+.about{
+    padding-left: 80px;
 }
 .about__content{
     margin: 100px 0;
@@ -143,7 +147,7 @@ h1, h2{
     justify-content: space-between;
 }
 .about__content--text{
-
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -166,17 +170,18 @@ h1, h2{
     font-weight: 400;   
 }
 .about__content--foto{
-    height: auto;
-    width: 600px;
+    height: 575px;
+    width: 729px;
 }
 .white{
     color: #fff;
 }  
 .master{
+    padding-right: 80px;
     background-image: url(./second-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    max-height: 675px;
+    height: 675px;
 }
 .master__content{
     padding-bottom: 100px;
@@ -191,6 +196,7 @@ h1, h2{
     height: auto;
 }
 .team{
+    margin-left: 80px;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 12px;
@@ -257,9 +263,10 @@ h1, h2{
     color: rgba(51, 51, 51, 0.75);
 }
 .special{
+    padding-right: 80px;
     background-image: url(./fourth-bg.png);
     width: 100%;
-    height: auto;
+    height: 676px;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -277,26 +284,121 @@ h1, h2{
 .btn__switch--item{
     margin: 10px;
 }
+.delicious{
+    margin: 70px 80px;
+}
+.delicious .strong {
+    width: 565px;
+    margin-bottom: 50px;
+}
+.delicious__content--vids{
+    width: 840px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.delicious__content--items{
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgba(51, 51, 51, 0.2);
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.delicious__content--items:nth-last-child(1){
+    border-right: none;
+}
+.delicious__content--menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+.delicious__content--position{
+    width: 365px;
+    height: 65px;
+}
+.delicious__content--name{
+    font-family: 'Banny', sans-serif !important;
+    font-size: 18px;
+    line-height: 18px;
+}
+.delicious__content--preschool{
+    font-size: 12px;
+    line-height: 12px;
+    color:rgba(51, 51, 51, 0.4);
+}
+.private{
+    background-image: url(./fourth-bg.png);
+    width: 100%;
+    height: 676px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+}
+.private .team{
+    color: white;
+    margin-right: 80px;
+}
 .private__content--foto{
     display: flex;
     justify-content: space-between;
 }
+.private .booking__content--text {
+    padding-bottom: 0;
+    padding-top: 0;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+
+}
 .width{
-    max-width: 600px;
+    width: 600px;
+    height: 475px;
     transition: 0.3s;
     cursor: pointer;
 }
 .width:hover{
     transform:scale(1.1)
 }
-.private{
-    padding-bottom: 100px;
-}
 .galery{
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    margin-bottom: 100px;
+}
+.galery__item{
+	height: 350px;
+	width: 25%;
+	cursor: pointer;
+	overflow: hidden;
+	background: gray;
+}
+.galery__item div:hover{
+	transform: scale(1.1);
+	transition: all .3s ease-in-out;
+	opacity: .7;
+}
+.galery__item div {
+    height: 100%; background-size: cover;
+}
+.one{
+    background: url(./pervaya.png) no-repeat;
+}
+.two{
+    background: url(./vtiraya.png) no-repeat;
+}
+.three{
+    background: url(./tretyaya.png) no-repeat;
+}
+.four{
+    background: url(./chetvyortaya.png) no-repeat;
 }
 .about__content{
     display: flex;
@@ -322,6 +424,9 @@ h1, h2{
     height: 60px;
     transition: 0.3s;
     margin-bottom: 10px;
+}
+.textarea__width{
+    max-width: 1250px;
 }
 
 .textarea{
@@ -370,8 +475,15 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     height: 15px;
     margin-right: 10px;
 }
+.contact__content{
+    max-width: 1280px;
+    margin: 0 auto;
+}
 .contact__block--info{
     display: flex;
+}
+.textarea__width{
+    width: 1280px;
 }
 .contact__content--items{
     display: flex;
