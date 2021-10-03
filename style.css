@@ -13,7 +13,7 @@ h1, h2{
     background: url(./Header.png) no-repeat;
     background-size: cover;
     width: 100%;
-    max-height: 800px;
+    max-height: auto;
 }
 .container{
     max-width: 1280px;
@@ -50,13 +50,13 @@ h1, h2{
     color: #E8C300;
 }
 .info{
+    padding: 100px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: #fff;
 }
 .timetable{
-    height: 500px;
     width: 60px;
     display: flex;
     font-weight: bold;
@@ -69,6 +69,7 @@ h1, h2{
 .timetable-text{
     position: absolute;
     transform: rotate(-90deg);
+    width: 300px;
 }
 .name{
     display: flex;
@@ -237,7 +238,7 @@ h1, h2{
     text-transform: uppercase;
     font-size: 12px;
     line-height: 20px;
-    width: 100%;
+    width: 560px;
     padding-top: 15px;
     padding-bottom: 15px;
     border: 1px solid #E8C300;
@@ -521,8 +522,99 @@ input, textarea{
 }
 /* адаптив*/
 
-@media (max-width:1000px) {
-
-
-    
+@media (max-width:1280px) {
+    .left, .right{
+        display: none;
+    }
+    .center{
+        left: 50%;
+        margin-left: -75px;
+        position: absolute;
+    }
+    .info{
+        margin-top: 150px;
+        flex-direction: column;
+    }
+    .timetable-text {
+        position: absolute;
+        transform: rotate(0deg);
+        width: 300px;
+        top: 35%;
+        left: 50%;
+        margin-left: -135px;
+    }
+    .social{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+    }
+    .about__content{
+        margin: 0 80px;
+        display: block;
+    }
+    .about__content--foto{
+        width: 400px;
+        height: auto;
+        justify-content: center;
+        display: flex;
+        margin: 0 auto;
+    }
+    .master__content{
+        display:block;
+        margin: 0 80px;
+    }
+    .booking__content{
+        display: block;
+    }
+    .booking .about__content--foto{
+        display: none;
+    }
+   .special__content{
+    display: block;
+   }
+   .special__content--foto{
+       width: 450px;
+       margin: 0 auto;
+       display: flex;
+       justify-content: center;
+   }
+   .delicious__content--column:nth-child(3){
+       display: none;
+   }
+   .delicious__content--menu{
+       display: flex;
+       justify-content: center;
+   }
+   .private{
+       height: 100%;
+   }
+   .private__content--foto{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+   .width{
+       width: 400px;
+       height: 100%;
+   }
+   .galery__item{
+       height: 200px;
+   }
+   .textarea__width{
+       width: 100%;
+   }
+   .heading{
+       display: flex;
+       justify-content: center;
+   }
+   .contact__block{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   .height .btn__yellow{
+       height: 80px;
+   }
 }
