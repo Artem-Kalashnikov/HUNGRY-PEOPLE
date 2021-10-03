@@ -553,6 +553,10 @@ input, textarea{
         margin: 0 80px;
         display: block;
     }
+    .about__content--text{
+        display: flex;
+        justify-content: center;
+    }
     .about__content--foto{
         width: 400px;
         height: auto;
@@ -570,6 +574,15 @@ input, textarea{
     .booking .about__content--foto{
         display: none;
     }
+    .about{
+        padding: 0;
+    }
+    .master{
+        padding: 0 80px;
+    }
+    .special{
+        padding: 0 80px;
+    }
    .special__content{
     display: block;
    }
@@ -582,12 +595,16 @@ input, textarea{
    .delicious__content--column:nth-child(3){
        display: none;
    }
+   .delicious__content--column{
+    margin-right: 15px;
+   }
    .delicious__content--menu{
        display: flex;
        justify-content: center;
    }
    .private{
        height: 100%;
+       padding-bottom: 0;
    }
    .private__content--foto{
        display: flex;
@@ -614,7 +631,11 @@ input, textarea{
        flex-direction: column;
        align-items: center;
    }
-   .height .btn__yellow{
-       height: 80px;
+   .contact__content--text{
+       margin-bottom: 30px;
+   }
+   .contact__block{
+    max-height: max-content;
+    margin-bottom: 50px;
    }
 }
